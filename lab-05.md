@@ -40,6 +40,8 @@ nrow(lq_ak)
 
     ## [1] 2
 
+### Exercise 2
+
 Next we’ll calculate the distance between all Denny’s and all La Quinta
 locations in Alaska.
 
@@ -95,6 +97,8 @@ dn_lq_ak_mindist <- dn_lq_ak %>%
   summarize(closest = min(distance))
 ```
 
+### Exercise 3
+
 It seems that Denny’s is close to La Quinta in Alaska. However,
 everything might be close together in Anchorage and Fairbanks because
 they are the two big cities in Alaska.
@@ -112,6 +116,8 @@ dn_lq_akm %>%
 ```
 
 ![](lab-05_files/figure-gfm/AK-map-1.png)<!-- -->
+
+### Exercise 4
 
 Let’s plot the locations for both establishments in the NC and TX. We
 can see that not every La Quinta has a Denny’s nearby in NC. However, it
@@ -142,7 +148,10 @@ dn_lq %>%
 
 ![](lab-05_files/figure-gfm/NC-TX-2.png)<!-- -->
 
-It seems to hold for most southern states!
+### Exercise 5
+
+It seems to hold for most southern states! The degree of overlap is high
+in the maps below.
 
 ``` r
 dn_lq %>%
